@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Button from "react-bootstrap/Button";
 
@@ -34,12 +34,15 @@ const App: React.FC<AppProps> = () => {
 
   const handleClick = () => {
     setSoundCloudLink({ soundCloudLink: generateSoundcloudUrl() });
+  };
+
+  useEffect(() => {
     if (soundCloudLink.soundCloudLink) {
       openInNewTab(soundCloudLink.soundCloudLink);
     } else {
       console.log("Generating Link...");
     }
-  };
+  }, [soundCloudLink.soundCloudLink]);
 
   return (
     <div className="container text-center mt-5">
