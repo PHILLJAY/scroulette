@@ -1,30 +1,41 @@
-# React + TypeScript + Vite
+# SCroulette: A Random SoundCloud Discovery App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+SCroulette lets you take a chance on discovering new sounds and artists on SoundCloud. With a click of a button, it generates a random SoundCloud link and opens a new tab for a spontaneous musical adventure!
 
-Currently, two official plugins are available:
+## Getting Started
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+1. Clone this repository:
 
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
-
-- Configure the top-level `parserOptions` property like this:
-
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
+```
+git clone https://github.com/philljay/scroulette.git
 ```
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+2. Install dependencies:
+
+```
+npm install
+```
+
+3. Start the development server:
+
+```
+npm start
+```
+
+## Features
+
+    Generates random SoundCloud URLs
+    Opens links directly in a new tab
+
+## TODO: Upcoming Features
+
+URL Validation: Check if a generated SoundCloud link is valid before opening the tab.
+Roulette Wheel: Implement a fun roulette wheel animation while generating a link.
+Loading Animation: Display a loading animation while a new link is being generated.
+SoundCloud Color Scheme: Adjust the app's color palette to match SoundCloud's signature orange and black theme.
+
+Contributing
+
+License
+
+This project is licensed under the MIT License.
