@@ -47,17 +47,6 @@ const App: React.FC<AppProps> = () => {
       <Button variant="primary" onClick={handleClick}>
         Discover a Sound
       </Button>
-      {soundCloudLink.soundCloudLink && ( // Only render if soundCloudLink.soundCloudLink exists
-        <div className="mt-3">
-          <a
-            href={soundCloudLink.soundCloudLink}
-            target="_blank"
-            rel="noreferrer"
-          >
-            Open in SoundCloud
-          </a>
-        </div>
-      )}
     </div>
   );
 };
