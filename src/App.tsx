@@ -16,10 +16,10 @@ const generateRandomChar = (): string => {
 
 const generateSoundcloudUrl = (): string => {
   let randomString = "";
-  for (let i = 0; i < 5; i++) {
+  const length = Math.random() > 0.5 ? 5 : 4; // Ternary operator
+  for (let i = 0; i < length; i++) {
     randomString += generateRandomChar();
   }
-  console.log("Generated URL:", "https://on.soundcloud.com/" + randomString);
   return "https://on.soundcloud.com/" + randomString;
 };
 
