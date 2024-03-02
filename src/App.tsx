@@ -23,6 +23,10 @@ const generateSoundcloudUrl = (): string => {
   return "https://on.soundcloud.com/" + randomString;
 };
 
+function openInNewTab(url: string) {
+  window.open(url, "_blank");
+}
+
 const App: React.FC<AppProps> = () => {
   const [soundCloudLink, setSoundCloudLink] = useState<AppState>({
     soundCloudLink: null,
@@ -30,9 +34,13 @@ const App: React.FC<AppProps> = () => {
 
   const handleClick = () => {
     setSoundCloudLink({ soundCloudLink: generateSoundcloudUrl() });
+    if (soundCloudLink.soundCloudLink) {
+      openInNewTab(soundCloudLink.soundCloudLink);
+    } else {
+      console.log("Generating Link...");
+    }
   };
 
-  console.log(typeof soundCloudLink);
   return (
     <div className="container text-center mt-5">
       <h1>Random SoundCloud Player</h1>
