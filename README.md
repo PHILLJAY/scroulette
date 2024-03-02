@@ -34,7 +34,7 @@ Roulette Wheel: Implement a fun roulette wheel animation while generating a link
 Loading Animation: Display a loading animation while a new link is being generated.
 SoundCloud Color Scheme: Adjust the app's color palette to match SoundCloud's signature orange and black theme.
 
-Contributing
+## Contributing
 
 License
 
