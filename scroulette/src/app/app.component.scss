@@ -7,6 +7,13 @@
   gap: 1em; /* Space between the radios */
 }
 
+.large-button {
+  padding: 16px 24px; /* Adjust padding */
+  font-size: 18px; /* Adjust font size if needed */
+  min-width: 150px; /* Set a minimum width if desired */
+  // Add other styles as needed (e.g., height, line-height)
+}
+
 mat-toolbar {
   justify-content: center;
 }

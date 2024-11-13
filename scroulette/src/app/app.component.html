@@ -9,8 +9,13 @@
     <mat-radio-button value="n">Not Private</mat-radio-button>
   </mat-radio-group>
 
-  <button mat-raised-button color="primary" (click)="generateLink()">
-    Generate Link
+  <button
+    mat-raised-button
+    color="primary"
+    (click)="generateLink()"
+    class="large-button"
+  >
+    Generate Link!
   </button>
 
   <div *ngIf="randomLink">

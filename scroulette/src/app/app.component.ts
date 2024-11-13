@@ -5,6 +5,7 @@ import { MatRadioChange, MatRadioModule } from '@angular/material/radio'; // Imp
 import { MatButtonModule } from '@angular/material/button'; // Import for mat-raised-button
 import { FormsModule } from '@angular/forms'; // Import FormsModule
 import { MatInputModule } from '@angular/material/input';
+import { MatIconModule } from '@angular/material/icon';
 
 @Component({
   selector: 'app-root',
@@ -16,7 +17,8 @@ import { MatInputModule } from '@angular/material/input';
     MatRadioModule, // Add MatRadioModule for radio buttons
     MatButtonModule, // Add MatButtonModule for the button
     FormsModule,
-    MatInputModule, // Add FormsModule and MatInputModule
+    MatInputModule,
+    MatIconModule, // Add FormsModule and MatInputModule
   ],
 })
 export class AppComponent {
