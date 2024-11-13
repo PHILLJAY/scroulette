@@ -1,0 +1,19 @@
+<!-- src/app/app.component.html -->
+<mat-toolbar color="primary">
+  <span>SCROULETTE</span>
+</mat-toolbar>
+
+<div class="container">
+  <mat-radio-group aria-label="Select an option" [(ngModel)]="privateSelected">
+    <mat-radio-button value="y">Private</mat-radio-button>
+    <mat-radio-button value="n">Not Private</mat-radio-button>
+  </mat-radio-group>
+
+  <button mat-raised-button color="primary" (click)="generateLink()">
+    Generate Link
+  </button>
+
+  <div *ngIf="randomLink">
+    <a href="{{ randomLink }}" target="_blank">{{ randomLink }}</a>
+  </div>
+</div>
